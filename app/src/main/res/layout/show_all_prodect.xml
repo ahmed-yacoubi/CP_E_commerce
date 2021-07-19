@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+       android:layout_margin="4dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        android:layout_marginTop="1dp">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+           android:background="#44F6F3F6"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/show_all_img"
+                android:layout_width="155dp"
+                android:layout_height="81dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/asset1" />
+
+            <TextView
+                android:id="@+id/show_all_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+
+                android:text="Fine Grain Sugar"
+                android:textColor="#000"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/show_all_img"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/show_all_tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:text="$20"
+                android:textColor="#000"
+                android:textSize="13sp"
+                app:layout_constraintStart_toEndOf="@+id/show_all_img"
+                app:layout_constraintTop_toBottomOf="@+id/show_all_tv_name" />
+
+          
+            <TextView
+                android:id="@+id/show_all_tv_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:text="10"
+                android:textColor="#000"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/show_all_img"
+                app:layout_constraintTop_toBottomOf="@+id/show_all_tv_price"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/show_all_btn_delete"
+                android:layout_width="33dp"
+                android:layout_height="29dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/ic_delete"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.937"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.307"
+                tools:ignore="UnknownId" />
+
+            <Button
+                android:id="@+id/show_all_show_all_btn_update"
+                android:layout_width="33dp"
+                android:layout_height="29dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/ic_baseline_edit_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.906"
+                app:layout_constraintStart_toEndOf="@+id/show_all_img"
+                app:layout_constraintTop_toBottomOf="@+id/show_all_btn_delete"
+                app:layout_constraintVertical_bias="0.714"
+                tools:ignore="UnknownId" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
